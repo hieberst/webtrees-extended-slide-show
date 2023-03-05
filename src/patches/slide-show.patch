@@ -1,0 +1,11 @@
+--- old/vendor/fisharebest/webtrees/resources/views/modules/random_media/slide-show.phtml
++++ new/vendor/fisharebest/webtrees/resources/views/modules/random_media/slide-show.phtml
+@@ -64,7 +64,7 @@
+             <li>
+                 <span class="fa-li" title="<?= I18N::translate('Individual') ?>"><?= view('icons/individual') ?></span>
+                 <a href="<?= e($individual->url()) ?>" class="wt-slide-show-link">
+-                    <?= $individual->fullName() ?>
++                    <?= $individual->fullName() . ' (' . $individual->lifespan() . ')' ?>
+                 </a>
+             </li>
+         <?php endforeach ?>

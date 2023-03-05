@@ -1,0 +1,5 @@
+msgid "Extended slide show"
+msgstr "Erweiterte Diashow"
+
+msgid "Random pictures from the current family tree with year of birth and year of death."
+msgstr "Zufallsbilder aus dem aktuellen Stammbaum mit Geburts- und Sterbejahr."

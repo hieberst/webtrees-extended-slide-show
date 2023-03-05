@@ -1,0 +1,30 @@
+{
+    "name": "hieberst/webtrees-extended-slide-show",
+    "keywords": [
+        "webtrees"
+    ],
+    "authors": [
+        {
+            "name": "Steffen Hieber",
+            "email": "hieberst@gmx.de",
+            "role": "Developer",
+            "homepage": "https://github.com/hieberst/webtrees-extended-slide-show"
+        }
+    ],
+    "require-dev": {
+        "ext-xdiff": "*",
+        "fisharebest/webtrees": "^2.1.0"
+    },
+    "scripts": {
+        "build": [
+            "php -f src/make.php build"
+        ],
+        "clean": [
+            "php -f src/make.php clean"
+        ]
+    },
+    "scripts-descriptions": {
+        "build": "Create a distribution file (extended-slide-show.zip)",
+        "clean": "Delete all intermediate files"
+    }
+}
