@@ -61,7 +61,7 @@ class ExtendedSlideShowModule extends AbstractModule  implements ModuleCustomInt
 
     public function customModuleVersion(): string
     {
-        return '0.1.0';
+        return '0.1.1';
     }
 
     public function customModuleSupportUrl(): string
@@ -71,6 +71,12 @@ class ExtendedSlideShowModule extends AbstractModule  implements ModuleCustomInt
 
     public function customTranslations(string $language): array
     {
-        return (new Translation($this->resourcesFolder() . "lang/$language/messages.po"))->asArray();
+        $messages = $this->resourcesFolder() . "lang/$language/messages.po";
+
+        if (file_exists($messages)) {
+            return (new Translation($messages))->asArray();
+        } else {
+            return [];
+        }
     }
 }
