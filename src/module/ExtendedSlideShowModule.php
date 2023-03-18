@@ -75,8 +75,8 @@ class ExtendedSlideShowModule extends AbstractModule  implements ModuleCustomInt
 
         if (file_exists($messages)) {
             return (new Translation($messages))->asArray();
-        } else {
-            return [];
         }
+
+        return [];
     }
 }
