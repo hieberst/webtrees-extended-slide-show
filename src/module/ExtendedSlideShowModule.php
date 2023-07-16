@@ -61,7 +61,7 @@ class ExtendedSlideShowModule extends AbstractModule  implements ModuleCustomInt
 
     public function customModuleVersion(): string
     {
-        return '0.1.1';
+        return '2.1.17.0.0';
     }
 
     public function customModuleSupportUrl(): string
