@@ -61,7 +61,12 @@ class ExtendedSlideShowModule extends AbstractModule  implements ModuleCustomInt
 
     public function customModuleVersion(): string
     {
-        return '2.1.17.0.0';
+        return rtrim(file_get_contents(__DIR__ . '/latest-version.txt'));
+    }
+
+    public function customModuleLatestVersionUrl(): string
+    {
+        return 'https://github.com/hieberst/webtrees-extended-slide-show/raw/main/latest-version.txt';
     }
 
     public function customModuleSupportUrl(): string

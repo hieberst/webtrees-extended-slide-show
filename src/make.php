@@ -41,7 +41,7 @@ function do_build()
 {
     rmtree('build');
     mkdir('build/resources/views', 0755, true);
-    foreach (glob('*.md') as $f)
+    foreach (glob('*.{md,txt}', GLOB_BRACE) as $f)
     {
         copy($f, 'build/' . basename($f));
     }
@@ -74,7 +74,7 @@ function do_build()
         $options = array(
             'remove_path' => 'build/',
             'add_path' => 'modules_v4/extended-slide-show/');
-        $zip->addGlob('build/*.{md,php}', GLOB_BRACE, $options);
+        $zip->addGlob('build/*.{md,php,txt}', GLOB_BRACE, $options);
         $zip->addGlob('build/resources/lang/*/*.po', 0, $options);
         $zip->addGlob('build/resources/views/*.phtml', 0, $options);
         $zip->close();
