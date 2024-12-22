@@ -4,6 +4,11 @@ This [webtrees](https://www.webtrees.net) module extends the slide show in such 
 
 It registers a custom view for the slide show, which is based on the original view and just adds the lifespan output.
 
+## Deprecation notice
+This module is deprecated as of webtrees 1.2.21 and above.
+
+See PR [#5025 More information about people connected to slide-show photo](https://github.com/fisharebest/webtrees/pull/5025)
+
 ## Installation
 
 Unzip the files into the folder of your webtrees installation.

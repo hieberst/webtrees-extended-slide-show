@@ -13,7 +13,7 @@
     ],
     "require-dev": {
         "ext-xdiff": "*",
-        "fisharebest/webtrees": "^2.1.0"
+        "fisharebest/webtrees": ">=2.1.0 <2.1.21"
     },
     "scripts": {
         "build": [
